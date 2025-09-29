@@ -1,0 +1,232 @@
+[
+  {
+    "id": "anthropos",
+    "greek": "ἄνθρωπος",
+    "translation": "man, human being",
+    "pronunciation": "ahn-throh-pos",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 95,
+    "examples": [
+      {
+        "greek": "ὁ ἄνθρωπος",
+        "translation": "the man",
+        "pronunciation": "ho ahn-throh-pos"
+      },
+      {
+        "greek": "ἄνθρωποι",
+        "translation": "men, people",
+        "pronunciation": "ahn-throh-poy"
+      }
+    ],
+    "etymology": "From Proto-Indo-European *h₂nḗr 'man'",
+    "relatedWords": ["ἀνθρώπινος (human)", "ἀνθρωπότης (humanity)"]
+  },
+  {
+    "id": "theos",
+    "greek": "θεός",
+    "translation": "god",
+    "pronunciation": "theh-os",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 90,
+    "examples": [
+      {
+        "greek": "ὁ θεός",
+        "translation": "the god",
+        "pronunciation": "ho theh-os"
+      },
+      {
+        "greek": "θεοί",
+        "translation": "gods",
+        "pronunciation": "theh-oy"
+      }
+    ],
+    "etymology": "From Proto-Indo-European *dʰéh₁s 'god'",
+    "relatedWords": ["θεῖος (divine)", "θεολογία (theology)"]
+  },
+  {
+    "id": "polis",
+    "greek": "πόλις",
+    "translation": "city, city-state",
+    "pronunciation": "poh-lis",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 85,
+    "examples": [
+      {
+        "greek": "ἡ πόλις",
+        "translation": "the city",
+        "pronunciation": "hay poh-lis"
+      },
+      {
+        "greek": "πόλεις",
+        "translation": "cities",
+        "pronunciation": "poh-lays"
+      }
+    ],
+    "etymology": "From Proto-Indo-European *pólis 'citadel'",
+    "relatedWords": ["πολίτης (citizen)", "πολιτεία (constitution)"]
+  },
+  {
+    "id": "logos",
+    "greek": "λόγος",
+    "translation": "word, speech, reason",
+    "pronunciation": "loh-gos",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 80,
+    "examples": [
+      {
+        "greek": "ὁ λόγος",
+        "translation": "the word",
+        "pronunciation": "ho loh-gos"
+      },
+      {
+        "greek": "λόγοι",
+        "translation": "words, speeches",
+        "pronunciation": "loh-goy"
+      }
+    ],
+    "etymology": "From Proto-Indo-European *leǵ- 'to collect, speak'",
+    "relatedWords": ["λόγιον (oracle)", "λογικός (logical)"]
+  },
+  {
+    "id": "physis",
+    "greek": "φύσις",
+    "translation": "nature, character",
+    "pronunciation": "foo-sis",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 75,
+    "examples": [
+      {
+        "greek": "ἡ φύσις",
+        "translation": "nature",
+        "pronunciation": "hay foo-sis"
+      },
+      {
+        "greek": "φύσεις",
+        "translation": "natures",
+        "pronunciation": "foo-says"
+      }
+    ],
+    "etymology": "From Proto-Indo-European *bʰuH- 'to become'",
+    "relatedWords": ["φυσικός (natural)", "φύω (to grow)"]
+  },
+  {
+    "id": "sophia",
+    "greek": "σοφία",
+    "translation": "wisdom",
+    "pronunciation": "soh-fee-ah",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 70,
+    "examples": [
+      {
+        "greek": "ἡ σοφία",
+        "translation": "wisdom",
+        "pronunciation": "hay soh-fee-ah"
+      },
+      {
+        "greek": "σοφίαι",
+        "translation": "wisdoms",
+        "pronunciation": "soh-fee-ay"
+      }
+    ],
+    "etymology": "From Proto-Indo-European *sap- 'to taste, perceive'",
+    "relatedWords": ["σοφός (wise)", "φιλοσοφία (philosophy)"]
+  },
+  {
+    "id": "arete",
+    "greek": "ἀρετή",
+    "translation": "excellence, virtue",
+    "pronunciation": "ah-reh-tay",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 65,
+    "examples": [
+      {
+        "greek": "ἡ ἀρετή",
+        "translation": "excellence",
+        "pronunciation": "hay ah-reh-tay"
+      },
+      {
+        "greek": "ἀρεταί",
+        "translation": "excellences",
+        "pronunciation": "ah-reh-tay"
+      }
+    ],
+    "etymology": "From Proto-Indo-European *h₂er- 'to fit together'",
+    "relatedWords": ["ἀρετός (excellent)", "ἀριστεύω (to excel)"]
+  },
+  {
+    "id": "dikaiosyne",
+    "greek": "δικαιοσύνη",
+    "translation": "justice, righteousness",
+    "pronunciation": "dee-kay-oh-soo-nay",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 60,
+    "examples": [
+      {
+        "greek": "ἡ δικαιοσύνη",
+        "translation": "justice",
+        "pronunciation": "hay dee-kay-oh-soo-nay"
+      },
+      {
+        "greek": "δικαιοσύναι",
+        "translation": "justices",
+        "pronunciation": "dee-kay-oh-soo-nay"
+      }
+    ],
+    "etymology": "From δίκαιος (just) + -σύνη (abstract noun suffix)",
+    "relatedWords": ["δίκαιος (just)", "δικαιοσύνη (justice)"]
+  },
+  {
+    "id": "philia",
+    "greek": "φιλία",
+    "translation": "friendship, love",
+    "pronunciation": "fee-lee-ah",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 55,
+    "examples": [
+      {
+        "greek": "ἡ φιλία",
+        "translation": "friendship",
+        "pronunciation": "hay fee-lee-ah"
+      },
+      {
+        "greek": "φιλίαι",
+        "translation": "friendships",
+        "pronunciation": "fee-lee-ay"
+      }
+    ],
+    "etymology": "From φίλος (friend) + -ία (abstract noun suffix)",
+    "relatedWords": ["φίλος (friend)", "φιλέω (to love)"]
+  },
+  {
+    "id": "eudaimonia",
+    "greek": "εὐδαιμονία",
+    "translation": "happiness, flourishing",
+    "pronunciation": "yoo-day-moh-nee-ah",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 50,
+    "examples": [
+      {
+        "greek": "ἡ εὐδαιμονία",
+        "translation": "happiness",
+        "pronunciation": "hay yoo-day-moh-nee-ah"
+      },
+      {
+        "greek": "εὐδαιμονίαι",
+        "translation": "happinesses",
+        "pronunciation": "yoo-day-moh-nee-ay"
+      }
+    ],
+    "etymology": "From εὖ (well) + δαίμων (spirit) + -ία (abstract noun suffix)",
+    "relatedWords": ["εὐδαίμων (happy)", "δαίμων (spirit)"]
+  }
+]

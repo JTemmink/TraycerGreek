@@ -1,0 +1,297 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Greek text styling */
+  .greek-text {
+    @apply font-greek text-greek-base;
+  }
+
+  .greek-heading {
+    @apply font-greek text-greek-2xl font-semibold;
+  }
+
+  .greek-large {
+    @apply font-greek text-greek-3xl font-bold;
+  }
+
+  /* Learning progress indicators */
+  .progress-bar {
+    @apply h-2 w-full rounded-full bg-muted overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply h-full bg-primary transition-all duration-300 ease-out;
+  }
+
+  /* Quiz question styling */
+  .quiz-question {
+    @apply p-6 bg-card rounded-lg border shadow-sm;
+  }
+
+  .quiz-option {
+    @apply p-4 rounded-lg border-2 border-transparent hover:border-primary/50 cursor-pointer transition-colors;
+  }
+
+  .quiz-option.selected {
+    @apply border-primary bg-primary/5;
+  }
+
+  .quiz-option.correct {
+    @apply border-green-500 bg-green-50 text-green-700;
+  }
+
+  .quiz-option.incorrect {
+    @apply border-red-500 bg-red-50 text-red-700;
+  }
+
+  /* Gamification elements */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-gold {
+    @apply bg-gold-100 text-gold-800;
+  }
+
+  .badge-silver {
+    @apply bg-gray-100 text-gray-800;
+  }
+
+  .badge-bronze {
+    @apply bg-orange-100 text-orange-800;
+  }
+
+  .streak-indicator {
+    @apply flex items-center space-x-1 text-gold-600 font-semibold;
+  }
+
+  /* Lesson content styling */
+  .lesson-content {
+    @apply prose prose-slate max-w-none;
+  }
+
+  .lesson-content h1 {
+    @apply text-3xl font-bold text-foreground mb-6;
+  }
+
+  .lesson-content h2 {
+    @apply text-2xl font-semibold text-foreground mb-4 mt-8;
+  }
+
+  .lesson-content h3 {
+    @apply text-xl font-semibold text-foreground mb-3 mt-6;
+  }
+
+  .lesson-content p {
+    @apply text-muted-foreground leading-relaxed mb-4;
+  }
+
+  .lesson-content ul,
+  .lesson-content ol {
+    @apply mb-4 space-y-2;
+  }
+
+  .lesson-content li {
+    @apply text-muted-foreground;
+  }
+
+  .lesson-content blockquote {
+    @apply border-l-4 border-primary pl-4 italic text-muted-foreground my-6;
+  }
+
+  .lesson-content code {
+    @apply bg-muted px-2 py-1 rounded text-sm font-mono;
+  }
+
+  .lesson-content pre {
+    @apply bg-muted p-4 rounded-lg overflow-x-auto my-4;
+  }
+
+  .lesson-content pre code {
+    @apply bg-transparent p-0;
+  }
+
+  /* Greek alphabet display */
+  .greek-alphabet {
+    @apply grid grid-cols-4 gap-4 md:grid-cols-6 lg:grid-cols-8;
+  }
+
+  .greek-letter {
+    @apply aspect-square flex flex-col items-center justify-center p-4 bg-card rounded-lg border hover:shadow-md transition-shadow;
+  }
+
+  .greek-letter-char {
+    @apply text-2xl font-greek font-bold text-primary;
+  }
+
+  .greek-letter-name {
+    @apply text-xs text-muted-foreground mt-1;
+  }
+
+  /* Vocabulary cards */
+  .vocab-card {
+    @apply p-4 bg-card rounded-lg border hover:shadow-md transition-shadow cursor-pointer;
+  }
+
+  .vocab-word {
+    @apply font-greek text-lg font-semibold text-primary;
+  }
+
+  .vocab-translation {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .vocab-pronunciation {
+    @apply text-xs text-muted-foreground italic;
+  }
+
+  /* Dashboard widgets */
+  .dashboard-widget {
+    @apply p-6 bg-card rounded-lg border shadow-sm;
+  }
+
+  .dashboard-widget-header {
+    @apply flex items-center justify-between mb-4;
+  }
+
+  .dashboard-widget-title {
+    @apply text-lg font-semibold text-foreground;
+  }
+
+  .dashboard-widget-content {
+    @apply space-y-4;
+  }
+
+  /* Statistics display */
+  .stat-card {
+    @apply p-4 bg-card rounded-lg border text-center;
+  }
+
+  .stat-value {
+    @apply text-2xl font-bold text-primary;
+  }
+
+  .stat-label {
+    @apply text-sm text-muted-foreground;
+  }
+
+  /* Loading states */
+  .skeleton {
+    @apply animate-pulse bg-muted rounded;
+  }
+
+  .skeleton-text {
+    @apply h-4 w-full rounded;
+  }
+
+  .skeleton-text-sm {
+    @apply h-3 w-3/4 rounded;
+  }
+
+  .skeleton-avatar {
+    @apply h-10 w-10 rounded-full;
+  }
+
+  /* Accessibility improvements */
+  .sr-only {
+    @apply sr-only;
+  }
+
+  .focus-visible {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .quiz-option {
+      @apply border-2;
+    }
+    
+    .greek-letter {
+      @apply border-2;
+    }
+    
+    .vocab-card {
+      @apply border-2;
+    }
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .progress-fill {
+      @apply transition-none;
+    }
+    
+    .quiz-option {
+      @apply transition-none;
+    }
+    
+    .vocab-card {
+      @apply transition-none;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

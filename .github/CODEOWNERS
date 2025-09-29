@@ -1,0 +1,41 @@
+# Global code owners
+* @maintainers
+
+# Core application files
+/src/ @maintainers @frontend-team
+/src/app/ @maintainers @frontend-team
+/src/components/ @maintainers @frontend-team
+/src/lib/ @maintainers @backend-team
+/src/store/ @maintainers @frontend-team
+/src/types/ @maintainers @frontend-team
+
+# Configuration files
+package.json @maintainers @devops-team
+next.config.js @maintainers @devops-team
+tailwind.config.js @maintainers @frontend-team
+tsconfig.json @maintainers @frontend-team
+
+# Supabase files
+supabase/ @maintainers @backend-team
+supabase/migrations/ @maintainers @backend-team
+supabase/functions/ @maintainers @backend-team
+
+# Testing files
+__tests__/ @maintainers @qa-team
+e2e/ @maintainers @qa-team
+jest.config.js @maintainers @qa-team
+playwright.config.ts @maintainers @qa-team
+
+# Documentation
+README.md @maintainers @docs-team
+CONTRIBUTING.md @maintainers @docs-team
+CHANGELOG.md @maintainers @docs-team
+
+# CI/CD
+.github/ @maintainers @devops-team
+.github/workflows/ @maintainers @devops-team
+
+# Docker
+Dockerfile @maintainers @devops-team
+docker-compose.yml @maintainers @devops-team
+nginx.conf @maintainers @devops-team

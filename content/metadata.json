@@ -1,0 +1,108 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-15T10:00:00Z",
+  "totalLessons": 50,
+  "totalQuizzes": 89,
+  "totalVocabulary": 1000,
+  "levels": {
+    "beginner": 20,
+    "intermediate": 20,
+    "advanced": 10
+  },
+  "categories": [
+    "alphabet",
+    "pronunciation",
+    "grammar",
+    "vocabulary",
+    "reading",
+    "writing",
+    "culture",
+    "history",
+    "philosophy",
+    "literature"
+  ],
+  "authors": [
+    "Dr. Sarah Johnson",
+    "Prof. Michael Chen",
+    "Dr. Elena Rodriguez",
+    "Prof. James Wilson",
+    "Dr. Maria Papadopoulos"
+  ],
+  "contentStructure": {
+    "lessons": {
+      "beginner": {
+        "alphabet": 5,
+        "pronunciation": 5,
+        "basic_grammar": 5,
+        "vocabulary": 5
+      },
+      "intermediate": {
+        "advanced_grammar": 8,
+        "reading_comprehension": 6,
+        "translation": 6
+      },
+      "advanced": {
+        "classical_literature": 4,
+        "philosophy": 3,
+        "historical_texts": 3
+      }
+    },
+    "quizzes": {
+      "beginner": 30,
+      "intermediate": 35,
+      "advanced": 24
+    },
+    "vocabulary": {
+      "beginner": 300,
+      "intermediate": 400,
+      "advanced": 300
+    }
+  },
+  "learningPaths": {
+    "academic": {
+      "description": "For university students and researchers",
+      "focus": ["grammar", "reading", "translation"],
+      "estimatedDuration": "6 months"
+    },
+    "personal": {
+      "description": "For personal enrichment and interest",
+      "focus": ["vocabulary", "culture", "history"],
+      "estimatedDuration": "3 months"
+    },
+    "travel": {
+      "description": "For understanding Greek culture and history",
+      "focus": ["culture", "history", "basic_communication"],
+      "estimatedDuration": "2 months"
+    }
+  },
+  "features": {
+    "adaptiveLearning": true,
+    "gamification": true,
+    "progressTracking": true,
+    "offlineAccess": true,
+    "audioPronunciation": true,
+    "interactiveExercises": true,
+    "spacedRepetition": true,
+    "achievementSystem": true
+  },
+  "supportedLanguages": [
+    "English",
+    "Spanish",
+    "French",
+    "German",
+    "Italian"
+  ],
+  "accessibility": {
+    "screenReader": true,
+    "highContrast": true,
+    "keyboardNavigation": true,
+    "audioDescriptions": true,
+    "fontSize": "adjustable"
+  },
+  "technicalRequirements": {
+    "minimumBrowserVersion": "Chrome 90, Firefox 88, Safari 14, Edge 90",
+    "requiredFeatures": ["WebAudio", "LocalStorage", "IndexedDB"],
+    "recommendedResolution": "1920x1080",
+    "mobileSupport": true
+  }
+}

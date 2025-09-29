@@ -1,0 +1,262 @@
+{
+  "id": "001-greek-alphabet",
+  "title": "The Greek Alphabet",
+  "description": "Learn the 24 letters of the Greek alphabet, their names, and basic pronunciation.",
+  "level": "beginner",
+  "difficulty": 1,
+  "estimatedDuration": 30,
+  "orderIndex": 1,
+  "tags": ["alphabet", "pronunciation", "foundations"],
+  "prerequisites": [],
+  "learningObjectives": [
+    "Recognize all 24 Greek letters",
+    "Pronounce Greek letters correctly",
+    "Understand the relationship between Greek and English letters",
+    "Write Greek letters in both uppercase and lowercase"
+  ],
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "Introduction to the Greek Alphabet",
+      "type": "theory",
+      "content": "<p>The Greek alphabet is the ancestor of many modern alphabets, including the Latin alphabet used in English. It consists of 24 letters, each with both uppercase and lowercase forms.</p><p>The Greek alphabet was developed around 800 BCE and has been used continuously since then. It's the foundation for learning Ancient Greek, as every word in the language is written using these letters.</p>",
+      "order": 1,
+      "examples": [
+        {
+          "greek": "Α α",
+          "translation": "Alpha",
+          "pronunciation": "ah-lfah",
+          "explanation": "The first letter of the Greek alphabet, similar to English 'A'"
+        },
+        {
+          "greek": "Β β",
+          "translation": "Beta",
+          "pronunciation": "bay-tah",
+          "explanation": "Similar to English 'B'"
+        }
+      ]
+    },
+    {
+      "id": "uppercase-letters",
+      "title": "Uppercase Letters",
+      "type": "theory",
+      "content": "<p>Greek uppercase letters are used at the beginning of sentences, proper nouns, and for emphasis. Here are all 24 uppercase letters:</p>",
+      "order": 2,
+      "examples": [
+        {
+          "greek": "Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω",
+          "translation": "Alpha, Beta, Gamma, Delta, Epsilon, Zeta, Eta, Theta, Iota, Kappa, Lambda, Mu, Nu, Xi, Omicron, Pi, Rho, Sigma, Tau, Upsilon, Phi, Chi, Psi, Omega",
+          "pronunciation": "ah-lfah, bay-tah, gah-mah, del-tah, ep-si-lon, zay-tah, ay-tah, thay-tah, ee-oh-tah, kah-pah, lahm-dah, moo, noo, ksee, oh-mee-kron, pee, roh, sig-mah, tow, oop-si-lon, fee, khee, psee, oh-may-gah"
+        }
+      ]
+    },
+    {
+      "id": "lowercase-letters",
+      "title": "Lowercase Letters",
+      "type": "theory",
+      "content": "<p>Greek lowercase letters are used for most writing. Here are all 24 lowercase letters:</p>",
+      "order": 3,
+      "examples": [
+        {
+          "greek": "α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ τ υ φ χ ψ ω",
+          "translation": "alpha, beta, gamma, delta, epsilon, zeta, eta, theta, iota, kappa, lambda, mu, nu, xi, omicron, pi, rho, sigma, tau, upsilon, phi, chi, psi, omega",
+          "pronunciation": "ah-lfah, bay-tah, gah-mah, del-tah, ep-si-lon, zay-tah, ay-tah, thay-tah, ee-oh-tah, kah-pah, lahm-dah, moo, noo, ksee, oh-mee-kron, pee, roh, sig-mah, tow, oop-si-lon, fee, khee, psee, oh-may-gah"
+        }
+      ]
+    },
+    {
+      "id": "pronunciation-guide",
+      "title": "Pronunciation Guide",
+      "type": "theory",
+      "content": "<p>Here are some important pronunciation notes for Greek letters:</p><ul><li>Most Greek letters have similar sounds to their English counterparts</li><li>Some letters have unique sounds not found in English</li><li>Accent marks can change pronunciation</li><li>Ancient Greek pronunciation differs from modern Greek</li></ul>",
+      "order": 4,
+      "examples": [
+        {
+          "greek": "Θ θ",
+          "translation": "Theta",
+          "pronunciation": "thay-tah",
+          "explanation": "Like 'th' in 'think' - this sound doesn't exist in modern Greek"
+        },
+        {
+          "greek": "Φ φ",
+          "translation": "Phi",
+          "pronunciation": "fee",
+          "explanation": "Like 'ph' in 'phone' - aspirated 'p' sound"
+        },
+        {
+          "greek": "Χ χ",
+          "translation": "Chi",
+          "pronunciation": "khee",
+          "explanation": "Like 'ch' in 'loch' - aspirated 'k' sound"
+        }
+      ]
+    },
+    {
+      "id": "practice-exercise",
+      "title": "Letter Recognition Practice",
+      "type": "exercise",
+      "content": "<p>Practice recognizing Greek letters. Match each Greek letter with its English name.</p>",
+      "order": 5,
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What is the name of the Greek letter Α?",
+          "type": "multiple_choice",
+          "options": ["Alpha", "Beta", "Gamma", "Delta"],
+          "correctAnswer": "Alpha",
+          "explanation": "Α is called Alpha, the first letter of the Greek alphabet.",
+          "points": 10
+        },
+        {
+          "id": "q2",
+          "question": "What is the name of the Greek letter Ω?",
+          "type": "multiple_choice",
+          "options": ["Omicron", "Omega", "Omicron", "Upsilon"],
+          "correctAnswer": "Omega",
+          "explanation": "Ω is called Omega, the last letter of the Greek alphabet.",
+          "points": 10
+        },
+        {
+          "id": "q3",
+          "question": "Which Greek letter makes the 'th' sound?",
+          "type": "multiple_choice",
+          "options": ["Theta (Θ)", "Phi (Φ)", "Chi (Χ)", "Psi (Ψ)"],
+          "correctAnswer": "Theta (Θ)",
+          "explanation": "Θ (Theta) makes the 'th' sound as in 'think'.",
+          "points": 10
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": "alpha",
+      "greek": "Α α",
+      "translation": "Alpha",
+      "pronunciation": "ah-lfah",
+      "partOfSpeech": "noun",
+      "level": "beginner",
+      "frequency": 100,
+      "examples": [
+        {
+          "greek": "Α",
+          "translation": "Alpha",
+          "pronunciation": "ah-lfah"
+        }
+      ]
+    },
+    {
+      "id": "beta",
+      "greek": "Β β",
+      "translation": "Beta",
+      "pronunciation": "bay-tah",
+      "partOfSpeech": "noun",
+      "level": "beginner",
+      "frequency": 95,
+      "examples": [
+        {
+          "greek": "Β",
+          "translation": "Beta",
+          "pronunciation": "bay-tah"
+        }
+      ]
+    },
+    {
+      "id": "gamma",
+      "greek": "Γ γ",
+      "translation": "Gamma",
+      "pronunciation": "gah-mah",
+      "partOfSpeech": "noun",
+      "level": "beginner",
+      "frequency": 90,
+      "examples": [
+        {
+          "greek": "Γ",
+          "translation": "Gamma",
+          "pronunciation": "gah-mah"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "alphabet-quiz",
+      "title": "Greek Alphabet Quiz",
+      "type": "quiz",
+      "description": "Test your knowledge of the Greek alphabet",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What is the first letter of the Greek alphabet?",
+          "type": "multiple_choice",
+          "options": ["Α (Alpha)", "Β (Beta)", "Γ (Gamma)", "Δ (Delta)"],
+          "correctAnswer": "Α (Alpha)",
+          "explanation": "Α (Alpha) is the first letter of the Greek alphabet.",
+          "points": 10
+        },
+        {
+          "id": "q2",
+          "question": "What is the last letter of the Greek alphabet?",
+          "type": "multiple_choice",
+          "options": ["Ξ (Xi)", "Ο (Omicron)", "Π (Pi)", "Ω (Omega)"],
+          "correctAnswer": "Ω (Omega)",
+          "explanation": "Ω (Omega) is the last letter of the Greek alphabet.",
+          "points": 10
+        },
+        {
+          "id": "q3",
+          "question": "How many letters are in the Greek alphabet?",
+          "type": "multiple_choice",
+          "options": ["22", "24", "26", "28"],
+          "correctAnswer": "24",
+          "explanation": "The Greek alphabet has 24 letters.",
+          "points": 10
+        }
+      ],
+      "timeLimit": 10,
+      "passingScore": 70,
+      "instructions": "Answer all questions about the Greek alphabet. You have 10 minutes to complete this quiz."
+    }
+  ],
+  "resources": [
+    {
+      "id": "alphabet-chart",
+      "title": "Greek Alphabet Chart",
+      "type": "image",
+      "url": "/resources/greek-alphabet-chart.png",
+      "description": "A visual chart showing all Greek letters with their names and pronunciations"
+    },
+    {
+      "id": "pronunciation-audio",
+      "title": "Alphabet Pronunciation Audio",
+      "type": "audio",
+      "url": "/resources/greek-alphabet-pronunciation.mp3",
+      "description": "Audio recording of all Greek letters being pronounced",
+      "duration": 180
+    }
+  ],
+  "metadata": {
+    "author": "Dr. Sarah Johnson",
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "difficulty": {
+      "grammar": 1,
+      "vocabulary": 1,
+      "reading": 1,
+      "writing": 1
+    },
+    "estimatedTime": {
+      "reading": 10,
+      "exercises": 15,
+      "review": 5
+    },
+    "prerequisites": [],
+    "learningOutcomes": [
+      "Recognize all 24 Greek letters",
+      "Pronounce Greek letters correctly",
+      "Understand the relationship between Greek and English letters",
+      "Write Greek letters in both uppercase and lowercase"
+    ],
+    "tags": ["alphabet", "pronunciation", "foundations"]
+  }
+}
