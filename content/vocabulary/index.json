@@ -1,0 +1,162 @@
+[
+  {
+    "id": "anthropos",
+    "greek": "ἄνθρωπος",
+    "translation": "man, human being",
+    "pronunciation": "ahn-throh-pos",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 95,
+    "examples": [
+      {
+        "greek": "ὁ ἄνθρωπος",
+        "translation": "the man",
+        "pronunciation": "ho ahn-throh-pos"
+      }
+    ]
+  },
+  {
+    "id": "theos",
+    "greek": "θεός",
+    "translation": "god",
+    "pronunciation": "theh-os",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 90,
+    "examples": [
+      {
+        "greek": "ὁ θεός",
+        "translation": "the god",
+        "pronunciation": "ho theh-os"
+      }
+    ]
+  },
+  {
+    "id": "polis",
+    "greek": "πόλις",
+    "translation": "city, city-state",
+    "pronunciation": "poh-lis",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 85,
+    "examples": [
+      {
+        "greek": "ἡ πόλις",
+        "translation": "the city",
+        "pronunciation": "hay poh-lis"
+      }
+    ]
+  },
+  {
+    "id": "logos",
+    "greek": "λόγος",
+    "translation": "word, speech, reason",
+    "pronunciation": "loh-gos",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 80,
+    "examples": [
+      {
+        "greek": "ὁ λόγος",
+        "translation": "the word",
+        "pronunciation": "ho loh-gos"
+      }
+    ]
+  },
+  {
+    "id": "physis",
+    "greek": "φύσις",
+    "translation": "nature, character",
+    "pronunciation": "foo-sis",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 75,
+    "examples": [
+      {
+        "greek": "ἡ φύσις",
+        "translation": "nature",
+        "pronunciation": "hay foo-sis"
+      }
+    ]
+  },
+  {
+    "id": "sophia",
+    "greek": "σοφία",
+    "translation": "wisdom",
+    "pronunciation": "soh-fee-ah",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 70,
+    "examples": [
+      {
+        "greek": "ἡ σοφία",
+        "translation": "wisdom",
+        "pronunciation": "hay soh-fee-ah"
+      }
+    ]
+  },
+  {
+    "id": "arete",
+    "greek": "ἀρετή",
+    "translation": "excellence, virtue",
+    "pronunciation": "ah-reh-tay",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 65,
+    "examples": [
+      {
+        "greek": "ἡ ἀρετή",
+        "translation": "excellence",
+        "pronunciation": "hay ah-reh-tay"
+      }
+    ]
+  },
+  {
+    "id": "dikaiosyne",
+    "greek": "δικαιοσύνη",
+    "translation": "justice, righteousness",
+    "pronunciation": "dee-kay-oh-soo-nay",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 60,
+    "examples": [
+      {
+        "greek": "ἡ δικαιοσύνη",
+        "translation": "justice",
+        "pronunciation": "hay dee-kay-oh-soo-nay"
+      }
+    ]
+  },
+  {
+    "id": "philia",
+    "greek": "φιλία",
+    "translation": "friendship, love",
+    "pronunciation": "fee-lee-ah",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 55,
+    "examples": [
+      {
+        "greek": "ἡ φιλία",
+        "translation": "friendship",
+        "pronunciation": "hay fee-lee-ah"
+      }
+    ]
+  },
+  {
+    "id": "eudaimonia",
+    "greek": "εὐδαιμονία",
+    "translation": "happiness, flourishing",
+    "pronunciation": "yoo-day-moh-nee-ah",
+    "partOfSpeech": "noun",
+    "level": "beginner",
+    "frequency": 50,
+    "examples": [
+      {
+        "greek": "ἡ εὐδαιμονία",
+        "translation": "happiness",
+        "pronunciation": "hay yoo-day-moh-nee-ah"
+      }
+    ]
+  }
+]

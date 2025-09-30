@@ -1,4 +1,4 @@
-import { createClientSupabase } from './supabase';
+import { createClientSupabase } from './supabase-client';
 import type { User, Session } from '@supabase/supabase-js';
 import type { Database } from '@/types/database';
 
@@ -72,20 +72,8 @@ export const auth = {
 
     if (error) throw error;
 
-    // Create user profile
-    if (data.user) {
-      await supabase
-        .from('profiles')
-        .insert({
-          id: data.user.id,
-          first_name: userData.firstName,
-          last_name: userData.lastName,
-          preferred_name: userData.preferredName,
-          role: userData.role || 'student',
-          level: 'beginner',
-          created_at: new Date().toISOString(),
-        });
-    }
+    // Profile creation is handled by the database trigger (handle_new_user)
+    // No need to manually insert profile here
 
     return data;
   },

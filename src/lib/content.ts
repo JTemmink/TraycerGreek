@@ -1,4 +1,6 @@
 import type { Lesson, Quiz, Vocabulary, ContentMetadata } from '@/types/content';
+import { promises as fs } from 'fs';
+import path from 'path';
 
 // Content cache
 const contentCache = new Map<string, any>();
@@ -30,21 +32,22 @@ function setCached<T>(key: string, data: T): void {
 }
 
 // Content loading functions
-export async function loadContent<T>(path: string): Promise<T> {
-  const cached = getCached<T>(path);
+export async function loadContent<T>(contentPath: string): Promise<T> {
+  const cached = getCached<T>(contentPath);
   if (cached) return cached;
 
   try {
-    const response = await fetch(`/content/${path}`);
-    if (!response.ok) {
-      throw new Error(`Failed to load content: ${response.statusText}`);
-    }
+    // Build the full file path using process.cwd() and path.join
+    const fullPath = path.join(process.cwd(), 'content', contentPath);
     
-    const data = await response.json();
-    setCached(path, data);
+    // Read the file directly from the filesystem
+    const fileContent = await fs.readFile(fullPath, 'utf-8');
+    const data = JSON.parse(fileContent);
+    
+    setCached(contentPath, data);
     return data;
   } catch (error) {
-    console.error(`Error loading content from ${path}:`, error);
+    console.error(`Error loading content from ${contentPath}:`, error);
     throw error;
   }
 }
@@ -62,7 +65,10 @@ export async function getLessons(level?: string): Promise<Lesson[]> {
 
 export async function getLessonById(id: string): Promise<Lesson | null> {
   try {
-    const lesson = await loadContent<Lesson>(`lessons/${id}.json`);
+    // Convert slug back to file path format
+    // e.g., "beginner-001-greek-alphabet" -> "beginner/001-greek-alphabet"
+    const filePath = id.replace('-', '/');
+    const lesson = await loadContent<Lesson>(`lessons/${filePath}.json`);
     return lesson;
   } catch (error) {
     console.error(`Error loading lesson ${id}:`, error);
@@ -142,8 +148,8 @@ export async function getVocabulary(level?: string, limit?: number): Promise<Voc
 
 export async function getVocabularyById(id: string): Promise<Vocabulary | null> {
   try {
-    const word = await loadContent<Vocabulary>(`vocabulary/${id}.json`);
-    return word;
+    const vocabulary = await getVocabulary();
+    return vocabulary.find(word => word.id === id) || null;
   } catch (error) {
     console.error(`Error loading vocabulary ${id}:`, error);
     return null;

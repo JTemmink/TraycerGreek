@@ -1,7 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
-import { cookies } from 'next/headers';
 import type { Database } from '@/types/database';
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
@@ -19,13 +17,7 @@ export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
 // Client component Supabase client
 export const createClientSupabase = () => createClientComponentClient<Database>();
 
-// Server component Supabase client
-export const createServerSupabase = () => {
-  const cookieStore = cookies();
-  return createServerComponentClient<Database>({ cookies: () => cookieStore });
-};
-
-// Database query helpers
+// Database query helpers for client-side use
 export const db = {
   // User queries
   async getUserProfile(userId: string) {

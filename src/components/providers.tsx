@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useEffect, useState } from 'react';
-import { createClientSupabase } from '@/lib/supabase';
+import { createClientSupabase } from '@/lib/supabase-client';
 import { useAuthStore } from '@/store/auth-store';
 import { useLearningStore } from '@/store/learning-store';
 import { useContentStore } from '@/store/content-store';

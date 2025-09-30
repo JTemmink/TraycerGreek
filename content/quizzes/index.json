@@ -1,0 +1,104 @@
+[
+  {
+    "id": "alphabet-quiz",
+    "title": "Greek Alphabet Quiz",
+    "description": "Test your knowledge of the Greek alphabet with this comprehensive quiz.",
+    "lessonId": "001-greek-alphabet",
+    "level": "beginner",
+    "difficulty": 1,
+    "timeLimit": 15,
+    "estimatedDuration": 15,
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What is the first letter of the Greek alphabet?",
+        "type": "multiple_choice",
+        "correctAnswer": "Α (Alpha)",
+        "points": 10
+      },
+      {
+        "id": "q2",
+        "question": "What is the last letter of the Greek alphabet?",
+        "type": "multiple_choice",
+        "correctAnswer": "Ω (Omega)",
+        "points": 10
+      },
+      {
+        "id": "q3",
+        "question": "How many letters are in the Greek alphabet?",
+        "type": "multiple_choice",
+        "correctAnswer": "24",
+        "points": 10
+      },
+      {
+        "id": "q4",
+        "question": "Which Greek letter makes the 'th' sound as in 'think'?",
+        "type": "multiple_choice",
+        "correctAnswer": "Θ (Theta)",
+        "points": 10
+      },
+      {
+        "id": "q5",
+        "question": "What is the name of the Greek letter Β?",
+        "type": "fill_in_blank",
+        "correctAnswer": "Beta",
+        "points": 10
+      },
+      {
+        "id": "q6",
+        "question": "Which Greek letter is pronounced like 'g' in 'go'?",
+        "type": "multiple_choice",
+        "correctAnswer": "Γ (Gamma)",
+        "points": 10
+      },
+      {
+        "id": "q7",
+        "question": "What is the name of the Greek letter that looks like a circle?",
+        "type": "multiple_choice",
+        "correctAnswer": "Ο (Omicron)",
+        "points": 10
+      },
+      {
+        "id": "q8",
+        "question": "Which Greek letter makes the 'ph' sound as in 'phone'?",
+        "type": "multiple_choice",
+        "correctAnswer": "Φ (Phi)",
+        "points": 10
+      },
+      {
+        "id": "q9",
+        "question": "What is the name of the Greek letter that looks like a cross?",
+        "type": "multiple_choice",
+        "correctAnswer": "Χ (Chi)",
+        "points": 10
+      },
+      {
+        "id": "q10",
+        "question": "Which Greek letter is pronounced like 's' in 'sun'?",
+        "type": "multiple_choice",
+        "correctAnswer": "Σ (Sigma)",
+        "points": 10
+      }
+    ],
+    "instructions": "Answer all questions about the Greek alphabet. You have 15 minutes to complete this quiz. Good luck!",
+    "metadata": {
+      "author": "Dr. Sarah Johnson",
+      "version": "1.0.0",
+      "lastUpdated": "2024-01-15T10:00:00Z",
+      "estimatedTime": 15,
+      "difficulty": {
+        "overall": 1,
+        "vocabulary": 1,
+        "grammar": 1,
+        "comprehension": 1
+      },
+      "tags": ["alphabet", "pronunciation", "foundations"],
+      "learningObjectives": [
+        "Recognize all 24 Greek letters",
+        "Pronounce Greek letters correctly",
+        "Understand the relationship between Greek and English letters"
+      ]
+    }
+  }
+]

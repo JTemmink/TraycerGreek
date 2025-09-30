@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Crimson_Text, Noto_Sans_Greek } from 'next/font/google';
+import { Inter, Crimson_Text, Noto_Sans } from 'next/font/google';
 import './globals.css';
 import { Providers } from '@/components/providers';
 
@@ -16,7 +16,7 @@ const crimsonText = Crimson_Text({
   display: 'swap',
 });
 
-const notoSansGreek = Noto_Sans_Greek({
+const notoSansGreek = Noto_Sans({
   subsets: ['greek'],
   variable: '--font-greek',
   display: 'swap',

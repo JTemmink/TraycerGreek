@@ -71,7 +71,7 @@ export default async function QuizzesPage() {
                         <div className="space-y-4">
                           <div className="flex items-center text-sm text-muted-foreground">
                             <Clock className="h-4 w-4 mr-2" />
-                            {quiz.estimatedDuration} minutes
+                            Estimated time: {quiz.metadata.estimatedTime} minutes
                           </div>
                           
                           <div className="flex items-center text-sm text-muted-foreground">
