@@ -1,241 +1,212 @@
-# Traycer Greek - Ancient Greek Language Learning Platform
+# TraycerGreek - Ancient Greek Learning Platform
 
-A comprehensive, modern web application for learning Ancient Greek featuring adaptive learning, gamification, and interactive content.
+An interactive web application for learning Ancient Greek with comprehensive lessons, quizzes, vocabulary, and adaptive learning features.
 
-## 🚀 Features
+## 🌟 Features
 
-- **Interactive Lessons**: Multimedia-rich content with audio pronunciation and visual aids
-- **Adaptive Learning**: AI-powered system that adjusts difficulty based on your progress
-- **Gamification**: Points, badges, streaks, and achievements to keep you motivated
-- **Comprehensive Analytics**: Detailed progress tracking and performance insights
-- **Community Learning**: Connect with fellow learners and participate in study groups
-- **Flexible Scheduling**: Learn at your own pace with offline access
-- **Accessibility**: Full WCAG 2.1 AA compliance with screen reader support
+- **Interactive Lessons**: Structured learning path with beginner to advanced levels
+- **Vocabulary Building**: Comprehensive Greek vocabulary with pronunciation guides
+- **Quiz System**: Adaptive quizzes to test your knowledge
+- **Progress Tracking**: Monitor your learning progress and achievements
+- **Gamification**: Points, streaks, and achievements to keep you motivated
+- **Adaptive Learning**: AI-powered recommendations based on your performance
 
-## 🛠️ Tech Stack
+## 🚀 Tech Stack
 
-- **Frontend**: Next.js 14, React 18, TypeScript
-- **Styling**: Tailwind CSS, Framer Motion
-- **Backend**: Supabase (PostgreSQL, Auth, Real-time)
-- **State Management**: Zustand
-- **Testing**: Jest, React Testing Library, Playwright
-- **Deployment**: Vercel (recommended)
+- **Frontend**: Next.js 14, React, TypeScript
+- **Styling**: Tailwind CSS, shadcn/ui components
+- **Database**: Supabase (PostgreSQL)
+- **Authentication**: Supabase Auth
+- **Testing**: Jest, Playwright
+- **Deployment**: Docker, Vercel-ready
 
-## 📋 Prerequisites
+## 📚 Learning Content
 
-- Node.js 18.0.0 or higher
-- npm 8.0.0 or higher
+### Beginner Level
+- Greek Alphabet (Α-Ω)
+- Basic Pronunciation
+- Essential Vocabulary
+- Simple Grammar
+
+### Intermediate Level
+- Verb Conjugations
+- Noun Declensions
+- Reading Practice
+- Cultural Context
+
+### Advanced Level
+- Complex Grammar
+- Literature Analysis
+- Historical Texts
+- Academic Writing
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 - Supabase account
-- Git
+- Docker (optional, for containerization)
 
-## 🚀 Quick Start
+### Installation
 
-### 1. Clone the repository
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/JTemmink/TraycerGreek.git
+   cd TraycerGreek
+   ```
 
-```bash
-git clone https://github.com/your-username/traycer-greek.git
-cd traycer-greek
-```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### 2. Install dependencies
+3. **Environment setup**
+   ```bash
+   cp env.example .env.local
+   # Edit .env.local with your Supabase credentials
+   ```
 
-```bash
-npm install
-```
+4. **Database setup**
+   ```bash
+   # Run Supabase migrations
+   supabase db reset
+   ```
 
-### 3. Set up environment variables
+5. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-```bash
-cp env.example .env.local
-```
-
-Edit `.env.local` with your Supabase credentials:
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
-```
-
-### 4. Set up Supabase
-
-1. Create a new Supabase project
-2. Run the database migrations:
-
-```bash
-npx supabase db push
-```
-
-3. Set up Row Level Security policies (already included in migrations)
-
-### 5. Start the development server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+6. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 📁 Project Structure
 
 ```
-traycer-greek/
-├── src/
-│   ├── app/                    # Next.js App Router pages
-│   │   ├── (auth)/            # Authentication pages
-│   │   ├── (dashboard)/       # Dashboard pages
-│   │   ├── (learning)/        # Learning pages
-│   │   └── globals.css        # Global styles
-│   ├── components/            # React components
-│   │   ├── ui/               # Base UI components
-│   │   ├── auth/             # Authentication components
-│   │   ├── learning/         # Learning components
-│   │   ├── dashboard/        # Dashboard components
-│   │   └── layout/           # Layout components
-│   ├── lib/                  # Utility functions
-│   ├── store/                # Zustand stores
-│   └── types/                # TypeScript type definitions
-├── content/                   # JSON content files
-│   ├── lessons/              # Lesson content
-│   ├── vocabulary/           # Vocabulary data
-│   └── quizzes/              # Quiz content
-├── supabase/                 # Supabase configuration
-│   ├── migrations/           # Database migrations
-│   └── functions/            # Edge functions
-├── __tests__/                # Unit tests
-├── e2e/                      # End-to-end tests
-└── public/                   # Static assets
+src/
+├── app/                    # Next.js app router pages
+│   ├── (auth)/            # Authentication pages
+│   ├── (dashboard)/       # Dashboard pages
+│   └── (learning)/        # Learning content pages
+├── components/            # React components
+│   ├── auth/              # Authentication components
+│   ├── dashboard/         # Dashboard components
+│   ├── learning/          # Learning components
+│   └── ui/                # Reusable UI components
+├── lib/                   # Utility libraries
+├── store/                 # State management
+└── types/                 # TypeScript type definitions
+
+content/                   # Learning content
+├── lessons/              # Lesson content files
+├── quizzes/              # Quiz content files
+└── vocabulary/           # Vocabulary content files
+
+supabase/                 # Database configuration
+├── migrations/           # Database migrations
+└── functions/            # Edge functions
 ```
 
-## 🧪 Testing
+## 🎯 Learning Features
 
-### Unit Tests
+### Adaptive Learning System
+- Tracks your progress across all content
+- Identifies weak areas and suggests practice
+- Adjusts difficulty based on performance
+- Provides personalized learning paths
+
+### Gamification
+- **Points System**: Earn points for completing lessons and quizzes
+- **Achievements**: Unlock badges for milestones
+- **Streaks**: Maintain daily learning streaks
+- **Leaderboards**: Compare progress with other learners
+
+### Content Management
+- **Lessons**: Interactive content with multimedia
+- **Quizzes**: Multiple choice, fill-in-the-blank, and matching exercises
+- **Vocabulary**: Audio pronunciation and example sentences
+- **Progress Tracking**: Detailed analytics of your learning journey
+
+## 🔧 Development
+
+### Available Scripts
 
 ```bash
-npm run test
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
+npm run lint         # Run ESLint
+npm run test         # Run tests
+npm run test:e2e     # Run end-to-end tests
 ```
 
-### Watch Mode
+### Database Migrations
 
 ```bash
-npm run test:watch
-```
+# Create a new migration
+supabase migration new migration_name
 
-### Coverage
+# Apply migrations
+supabase db reset
 
-```bash
-npm run test:coverage
-```
-
-### End-to-End Tests
-
-```bash
-npm run test:e2e
-```
-
-### E2E with UI
-
-```bash
-npm run test:e2e:ui
+# Generate TypeScript types
+supabase gen types typescript --local > src/types/database.ts
 ```
 
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Set environment variables in Vercel dashboard
-4. Deploy!
+1. Connect your GitHub repository to Vercel
+2. Set environment variables in Vercel dashboard
+3. Deploy automatically on every push
 
-### Other Platforms
-
-The app can be deployed to any platform that supports Next.js:
-
-- Netlify
-- Railway
-- DigitalOcean App Platform
-- AWS Amplify
-
-## 📚 Content Management
-
-### Adding New Lessons
-
-1. Create a new JSON file in `content/lessons/[level]/`
-2. Follow the lesson schema defined in `src/types/content.ts`
-3. Update the lesson index in `content/lessons/index.json`
-
-### Adding Vocabulary
-
-1. Add new vocabulary entries to `content/vocabulary/basic-words.json`
-2. Follow the vocabulary schema defined in `src/types/content.ts`
-
-### Adding Quizzes
-
-1. Create a new JSON file in `content/quizzes/`
-2. Follow the quiz schema defined in `src/types/content.ts`
-3. Update the quiz index in `content/quizzes/index.json`
-
-## 🔧 Development
-
-### Code Style
-
-We use ESLint and Prettier for code formatting:
+### Docker
 
 ```bash
-npm run lint
-npm run format
-```
+# Build Docker image
+docker build -t traycer-greek .
 
-### Type Checking
-
-```bash
-npm run type-check
-```
-
-### Building for Production
-
-```bash
-npm run build
+# Run container
+docker run -p 3000:3000 traycer-greek
 ```
 
 ## 🤝 Contributing
 
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+### Development Workflow
+
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
+3. Make your changes
+4. Add tests if applicable
+5. Commit your changes: `git commit -m 'Add amazing feature'`
+6. Push to the branch: `git push origin feature/amazing-feature`
+7. Open a Pull Request
 
-## 📄 License
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- [Next.js](https://nextjs.org/) for the amazing React framework
-- [Supabase](https://supabase.com/) for the backend infrastructure
-- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
-- [Lucide React](https://lucide.dev/) for the beautiful icons
-- [Framer Motion](https://www.framer.com/motion/) for smooth animations
+- Ancient Greek scholars and educators
+- Open source community
+- Supabase team for the excellent backend platform
+- Next.js team for the amazing framework
 
 ## 📞 Support
 
-If you have any questions or need help, please:
+If you have questions or need help:
 
-1. Check the [documentation](https://docs.traycer-greek.com)
-2. Search [existing issues](https://github.com/your-username/traycer-greek/issues)
-3. Create a [new issue](https://github.com/your-username/traycer-greek/issues/new)
-
-## 🗺️ Roadmap
-
-- [ ] Mobile app (React Native)
-- [ ] Advanced AI tutoring
-- [ ] Collaborative learning features
-- [ ] Integration with university systems
-- [ ] Offline-first architecture
-- [ ] Multi-language support
+- Open an [issue](https://github.com/JTemmink/TraycerGreek/issues)
+- Check the [documentation](https://github.com/JTemmink/TraycerGreek/wiki)
+- Join our community discussions
 
 ---
 
-Made with ❤️ for Greek learners worldwide
+**Happy Learning! 🏛️📚**
+
+*Master Ancient Greek with TraycerGreek - where classical knowledge meets modern technology.*
